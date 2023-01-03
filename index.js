@@ -106,6 +106,7 @@ for (let i = 0; i < finances.length; i++){
     }
     if (finances[i][1]){
         sum ++;
+        console.log(finances[i][1])
     }
 }
 console.log('Total:' + ' $' + sum);
