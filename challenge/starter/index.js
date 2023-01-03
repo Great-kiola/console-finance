@@ -99,16 +99,16 @@ console.log('Total Months: ' + finances.length)
 
 let sum =0;
 
+
+
 for (let i = 0; i < finances.length; i++){
     for (let j = 0; j < finances[i].length; j++){
-        console.log(finances[i][j]);
     }
-    if (finances === finances[i][1]){
+    if (finances[i][1]){
         sum ++;
     }
 }
-
-console.log('total:' + sum);
+console.log('Total:' + ' $' + sum);
 
 
 // finances.forEach(finance => {
