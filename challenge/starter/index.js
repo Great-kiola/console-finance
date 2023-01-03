@@ -86,3 +86,84 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+
+// To get the total months
+console.log('Financial Analysis')
+console.log('-------------------')
+
+console.log('Total Months: ' + finances.length)
+
+
+// total of all the months
+
+let sum =0;
+
+for (let i = 0; i < finances.length; i++){
+    for (let j = 0; j < finances[i].length; j++){
+        console.log(finances[i][j]);
+    }
+    if (finances === finances[i][1]){
+        sum ++;
+    }
+}
+
+console.log('total:' + sum);
+
+
+// finances.forEach(finance => {
+//     let total = (finance[1].reduce((accumulator, value) => {
+//         return accumulator + value
+//     }), 0) ;
+    
+//     finance[2] = total + '%'
+
+// });
+
+// console.log(total);
+
+// console.table(finances);
+    // const total = finance[1].reduce((accumulator, value) => {
+    //     return accumulator + value;
+    // }, 0);
+
+// finances.forEach(finance => {
+//     let total = ((finance[1] / 24) * 100).toFixed();
+//     finance[2] = total + '%'
+// });
+
+// console.table(finances);
+
+// for (let i = 0; i < finances.length ; i++ ) {
+
+//     var innerFinanceLength = finances[i].length
+//     for (let j = 0; j < innerFinanceLength ; j++) {
+//         console.log('[' + i + ',' + j + '] = ' + finances[i][j]);
+//     }
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+// finances.forEach((finance) => {
+//     finance.forEach((data) => {
+//         console.log(data);
+//     });
+// }); 
+
+
+
+
+
+
+
+
