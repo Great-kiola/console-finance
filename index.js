@@ -99,68 +99,15 @@ console.log('Total Months: ' + finances.length)
 
 let sum =0;
 
-
-
 for (let i = 0; i < finances.length; i++){
     for (let j = 0; j < finances[i].length; j++){
     }
-    if (finances[i][1]){
-        sum ++;
-        console.log(finances[i][1])
-    }
+    sum = sum + finances[i][1]
 }
-console.log('Total:' + ' $' + sum);
+console.log('Total: ' + '$' + sum);
 
 
-// finances.forEach(finance => {
-//     let total = (finance[1].reduce((accumulator, value) => {
-//         return accumulator + value
-//     }), 0) ;
-    
-//     finance[2] = total + '%'
-
-// });
-
-// console.log(total);
-
-// console.table(finances);
-    // const total = finance[1].reduce((accumulator, value) => {
-    //     return accumulator + value;
-    // }, 0);
-
-// finances.forEach(finance => {
-//     let total = ((finance[1] / 24) * 100).toFixed();
-//     finance[2] = total + '%'
-// });
-
-// console.table(finances);
-
-// for (let i = 0; i < finances.length ; i++ ) {
-
-//     var innerFinanceLength = finances[i].length
-//     for (let j = 0; j < innerFinanceLength ; j++) {
-//         console.log('[' + i + ',' + j + '] = ' + finances[i][j]);
-//     }
-// };
-
-
-
-
-
-
-
-
-
-
-
-
-
-// finances.forEach((finance) => {
-//     finance.forEach((data) => {
-//         console.log(data);
-//     });
-// }); 
-
+// Average of change in profit and loses
 
 
 
