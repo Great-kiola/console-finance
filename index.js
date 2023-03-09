@@ -106,7 +106,7 @@ for (let i = 0; i < finances.length; i++){
 console.log('Total: ' + '$' + sum);
 
 
-// Array of monthly profits using push method (adds elements to the end of an array and returns the new length of the array)
+// Array of monthly profits
 let changes = [];
 for (let i = 0; i < finances.length - 1; i++) {
   changes.push(finances[i + 1][1] - finances[i][1]);
