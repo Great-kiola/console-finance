@@ -13,7 +13,7 @@ use more than enough computing power.
 - I also learnt how to use the .length method to check the number of values in an array
 - The type of array that included in the datasheet was 2d array, which is an array that is
 nested inside another array.
-- so far i was able to complete on 1 out of the 5 tax that the program needs to perform,
+- so far i was able to complete on 5 out of the 5 tax that the program needs to perform,
 i will keep trying and iterating until i get it right.
 
 
@@ -34,4 +34,8 @@ i will keep trying and iterating until i get it right.
 
 Once the program has been run press f12 to get into the console, where the final work
 will be revealed. 
+
+## Screenshot
+<img width="778" alt="image" src="https://user-images.githubusercontent.com/117322790/224058918-6e4e54b8-52ac-489d-86f7-93559d7d6119.png">
+
 
