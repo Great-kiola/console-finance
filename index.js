@@ -96,8 +96,7 @@ console.log('Total Months: ' + finances.length)
 
 
 // total of all the months
-
-let sum =0;
+let sum = 0;
 
 for (let i = 0; i < finances.length; i++){
     for (let j = 0; j < finances[i].length; j++){
@@ -107,8 +106,35 @@ for (let i = 0; i < finances.length; i++){
 console.log('Total: ' + '$' + sum);
 
 
-// Average of change in profit and loses
+// Array of monthly profits using push method (adds elements to the end of an array and returns the new length of the array)
+let changes = [];
+for (let i = 0; i < finances.length - 1; i++) {
+  changes.push(finances[i + 1][1] - finances[i][1]);
+}
 
+// Total of all changes in profits to calculate the average **change**
+let totalChanges = 0;
+for (let change of changes) {
+  totalChanges += change;
+}
+
+// Average change using toFixed syntax
+let averageChange = (totalChanges/changes.length).toFixed(2);
+console.log("Average Change: " + averageChange);
+
+
+// Get increase in profits
+let greatestIncrease = changes.reduce((a, b) => Math.max(a, b));
+// Month with greatest increase
+let monthGreatestIncrease = changes.indexOf(greatestIncrease) + 1;
+console.log("Greatest increase in Profits/losses: " + finances[monthGreatestIncrease][0] + " = " +  ("$" + greatestIncrease))
+
+
+// Gt decrease in profits by using reduce and Math.min() static method returns the smallest of the numbers given as input parameters
+let greatestDecrease = changes.reduce((a, b) => Math.min(a, b));
+// Month with greatest decrease
+let monthGreatestDecrease = changes.indexOf(greatestDecrease) + 1;
+console.log("Greatest Decrease in Profits/Losses: " + finances[monthGreatestDecrease][0] + " = " + ("$" + greatestDecrease))
 
 
 
